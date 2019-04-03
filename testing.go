@@ -1,6 +1,7 @@
 package main
 
 import (
+	_ "github.com/ibmdb/go_ibm_db"
     "database/sql"
     "fmt"
 )
