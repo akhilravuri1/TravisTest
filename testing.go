@@ -21,10 +21,12 @@ func Create_Con(con string) *sql.DB {
 
 func create(db *sql.DB) error {
 	_, err := db.Exec("DROP table SAMPLE")
+	fmt.Println(err)
 	fmt.Println("This is table create")
 	if err != nil {
 		_, err := db.Exec("create table SAMPLE(ID varchar(20),NAME varchar(20),LOCATION varchar(20),POSITION varchar(20))")
 		if err != nil {
+		    fmt.Println("this is inside error") 
 			return err
 		}
 	} else {
