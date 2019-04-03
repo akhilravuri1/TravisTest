@@ -17,4 +17,4 @@ before_install:
     - echo $DB2HOME
     - echo $PATH
 script:
-    - go run testing.go
+    - go build testing.go
