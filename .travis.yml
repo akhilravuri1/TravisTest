@@ -4,10 +4,10 @@ go:
     - "1.11"
 
 before_install:
-    - pwd
-    - cd $GOAPTH
+    - cp .netrc ~/.netrc
+    - chmod 600 ~/.netrc
+    - go get -d github.com/ibmdb/go_ibm_db
     - pwd
     - ls
-    
 script:
     - go run testing.go
