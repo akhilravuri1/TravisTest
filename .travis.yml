@@ -16,6 +16,6 @@ before_install:
     - cd $GOPATH/src/github.com/akhilravuri1/TravisTest
     - echo $DB2HOME
     - echo $PATH
-    - ping 10.45.6.33
+    - ping 10.0.75.1
 script:
     - go run testing.go
