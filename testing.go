@@ -82,7 +82,7 @@ func execquery(st *sql.Stmt) error{
 }
 
 func main(){
-    con:="HOSTNAME=10.45.6.33;DATABASE=go;PORT=50000;UID=rakhil;PWD=Pranu134#"
+    con:="HOSTNAME=10.45.6.33;DATABASE=go;PORT=50000;UID=rakhil;PWD=Spranu134#"
 	type Db *sql.DB
 	var re Db
 	re=Create_Con(con)
