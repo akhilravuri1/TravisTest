@@ -4,7 +4,10 @@ go:
     - "1.11"
 
 before_install:
-    - go get -d github.com/ibmdb/go_ibm_db
+    - go get -d github.com/ibmdb/go_ibm_d
+    - cd $GOAPTH
+    - pwd
+    - ls
     - cd $GOAPTH/src/github.com/ibmdb/go_ibm_db/installer
     - go run setup.go
     - export PATH=$PATH:$GOPATH/src/github.com/ibmdb/go_ibm_db/installer/clidriver/bin
