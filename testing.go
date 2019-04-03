@@ -1,17 +1,16 @@
 package main
 
-import "fmt"
-
-func akhil(){
-	fmt.Println("this is akhil")
-}
-
-func nikhil(){
-	fmt.Println("this is nikhil")
-}
+import (
+    _ "github.com/ibmdb/go_ibm_db"
+    "database/sql"
+    "fmt"
+)
 
 func main(){
-	fmt.Println("this is main")
-	akhil()
-	nikhil()
+    con:="HOSTNAME=host;DATABASE=name;PORT=number;UID=username;PWD=password"
+	db, err:=sql.Open("go_ibm_db", con)
+    if err != nil{  
+		fmt.Println(err)
+	}
+	db.Close()
 }
