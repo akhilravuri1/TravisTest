@@ -13,8 +13,7 @@ before_install:
     - export CGO_CFLAGS=-I$DB2HOME/include
     - export CGO_LDFLAGS=-L$DB2HOME/lib
     - export LD_LIBRARY_PATH=$GOPATH/src/github.com/ibmdb/go_ibm_db/installer/clidriver/lib
-    - $DB2HOME
     - cd $GOPATH/src/github.com/akhilravuri1/TravisTest
-    - $DB2HOME
+    - echo $DB2HOME
 script:
     - go run testing.go
