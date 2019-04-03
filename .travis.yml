@@ -3,4 +3,3 @@ language: go
 go:
     - "1.11"
     
-go_import_path: github.com/ibmdb/go_ibm_db
