@@ -16,6 +16,6 @@ before_install:
     - cd $GOPATH/src/github.com/akhilravuri1/TravisTest
     - echo $DB2HOME
     - echo $PATH
-    - ping 172.20.10.1
+    - ping dashdb-txn-sbox-yp-lon02-01.services.eu-gb.bluemix.net
 script:
     - go run testing.go
