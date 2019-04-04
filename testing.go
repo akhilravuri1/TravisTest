@@ -41,7 +41,7 @@ func create(db *sql.DB) error {
 
 func main() {
 	fmt.Println("This is main")
-	con := "HOSTNAME=10.0.75.1;DATABASE=go;PORT=50000;UID=uname;PWD=pass#"
+	con := "HOSTNAME=dashdb-txn-sbox-yp-lon02-01.services.eu-gb.bluemix.net;DATABASE=BLUDB;PORT=50000;UID=vlj63508;PWD=2^tqjcttp7b0xgg0"
 	type Db *sql.DB
 	var re Db
 	re = Create_Con(con)
