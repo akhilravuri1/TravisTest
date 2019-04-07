@@ -1,7 +1,7 @@
 language: go
 
 go:
-    - "1.11"
+    - "1.12"
 
 before_install:
     - go get -d github.com/ibmdb/go_ibm_db
