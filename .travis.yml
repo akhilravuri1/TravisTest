@@ -16,5 +16,6 @@ before_install:
     - cd $GOPATH/src/github.com/akhilravuri1/TravisTest
     - echo $DB2HOME
     - echo $PATH
+    - go run setup.go
 script:
     - go run testing.go
