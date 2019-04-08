@@ -31,7 +31,7 @@ func create(db *sql.DB) error{
         return err
     }
 	}
-	fmt.Println("TABLE CREATED")
+	fmt.Println("TABLE CREATED IN DATABASE")
     return nil
 }
 
