@@ -2,9 +2,6 @@ language: go
 
 go:
     - "1.12"
-    
-os:
-  - osx
 
 before_install:
     - go get -d github.com/ibmdb/go_ibm_db
