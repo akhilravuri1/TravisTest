@@ -84,7 +84,7 @@ func execquery(st *sql.Stmt) error{
 }
 
 func main(){
-    con := "HOSTNAME=dashdb-entry-yp-lon02-01.services.eu-gb.bluemix.net;DATABASE=BLUDB;PORT=50000;UID=dash13365;PWD=******"
+    con := "HOSTNAME=****;DATABASE=BLUDB;PORT=50000;UID=dash13365;PWD=******"
 	type Db *sql.DB
 	var re Db
 	re=Create_Con(con)
